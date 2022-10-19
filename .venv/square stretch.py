@@ -25,7 +25,7 @@ for i in range(number_of_squares):
     rectangle_x = rectangle_x + random.randint(1,10)
     rectangle_y = random.randint(0,2000)
     rectangle_shape = [
-        (rectangle_x + gap, rectangle_y), 
+        (rectangle_x + gap, rectangle_y + gap), 
         (rectangle_x + rectangle, rectangle_y + rectangle)]
     
     draw_image.rectangle(
@@ -36,4 +36,4 @@ for i in range(number_of_squares):
             random.randint(0, 255)
         )
     )
-image.save(f'./.venv/output/squares/{run_id}.png')
+image.save(f'./.venv/output/squares_stretch/{run_id}.png')
