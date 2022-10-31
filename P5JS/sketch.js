@@ -12,7 +12,7 @@ let c = 8.0/3.0;
 
 
 function setup() {
-  createCanvas(400, 400, WEBGL);
+  createCanvas(1000, 1000, WEBGL);
   background(0);
   
 }
@@ -30,7 +30,7 @@ function draw() {
 
 
   stroke(255);
-
+  scale(5)
   
 
   point(x,y,z);
