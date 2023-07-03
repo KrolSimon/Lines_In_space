@@ -14,14 +14,14 @@ number_of_lines = 1000000
 #Rectangle starting position point
 x = 0
 y = 0
-gap = 0
+gap = 1
 counter = 1
 line_length = height
 draw_image = ImageDraw.Draw(image)
 for i in range(number_of_lines):
     
     counter = counter + 1 
-    line_length = line_length - 100
+    line_length = line_length - 10
     
     if line_length == 0:
         line_length = 2000
